@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 100
+PointerAlignment: Left
+BreakBeforeBraces: Stroustrup
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+AllowShortFunctionsOnASingleLine: InlineOnly
