@@ -10,4 +10,9 @@ human: main.o Weapon.o HumanA.o HumanB.o
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o human
+	rm -f *.o
+
+fclean: clean
+	rm -f human
+
+re: fclean all

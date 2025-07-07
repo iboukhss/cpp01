@@ -10,4 +10,9 @@ zombie: main.o Zombie.o zombieHorde.o
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o zombie
+	rm -f *.o
+
+fclean: clean
+	rm -f zombie
+
+re: fclean all

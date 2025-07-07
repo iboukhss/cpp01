@@ -10,4 +10,9 @@ brain: main.o
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o brain
+	rm -f *.o
+
+fclean: clean
+	rm -f brain
+
+re: fclean all
