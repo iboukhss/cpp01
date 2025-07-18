@@ -4,22 +4,23 @@
 
 Zombie::Zombie()
 {
-    std::cout << "Zombie has been created (default).\n";
+    std::cout << "Zombie has been created (default)\n";
 }
 
-Zombie::Zombie(std::string name) : name(name)
+Zombie::Zombie(std::string name)
+    : name(name)
 {
-    std::cout << this->name << ": has been created.\n";
+    std::cout << this->name << ": has been created\n";
 }
 
 Zombie::~Zombie()
 {
-    std::cout << this->name << ": has been destroyed.\n";
+    std::cout << name << ": has been destroyed\n";
 }
 
 void Zombie::announce()
 {
-    std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
+    std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
 }
 
 void Zombie::setName(std::string name)
